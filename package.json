@@ -1,0 +1,34 @@
+{
+  "name": "gj-prototype",
+  "description": "GJ prototyping playground.",
+  "version": "0.0.1",
+  "author": "Tom Kraak",
+  "ava": {
+    "verbose": "true"
+  },
+  "bugs": "https://github.com/gundalowjuice/gj-prototype/issues",
+  "dependencies": {
+    "babel-preset-latest": "^6.14.0",
+    "reshape-standard": "^0.1.0",
+    "spike-css-standards": "^0.1.1",
+    "spike-page-id": "^0.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "rimraf": "^2.5.4",
+    "snazzy": "^4.0.1",
+    "spike": "^0.12.1",
+    "spike-core": "^0.11.2",
+    "standard": "^8.0.0"
+  },
+  "homepage": "https://github.com/gundalowjuice/gj-prototype",
+  "main": "app.js",
+  "private": "true",
+  "repository": "https://github.com/gundalowjuice/gj-prototype",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava"
+  }
+}

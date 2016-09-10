@@ -1,0 +1,11 @@
+extends(src='_layouts/default.sgr')
+  block(name='seo')
+    title Home | GJ
+    meta(
+      name='description'
+      content='Index prototyping.'
+    )
+  block(name='main')
+    h2 Hello World
+    ul
+      li:a(href='ingredients') Ingredients

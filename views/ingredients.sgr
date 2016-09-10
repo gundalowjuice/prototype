@@ -1,0 +1,50 @@
+extends(src='_layouts/default.sgr')
+  block(name='seo')
+    title Ingredients | GJ
+    meta(
+      name='description'
+      content='A grid of product ingredients.'
+    )
+  block(name='main')
+    #container
+      h1 Ingredients
+      p(md)
+        | **Gundalow Juice** is solely made with fruits and vegetables - no added sugars, preservatives or caffeine. A simple list of ingredients is on the front of each bottle, conveying the company commitment to transparency and purity. All Gundalow Juice is cold-pressed using HPP (also known as Pascalization), which ensures that consumers get the highest yield of vitamins, minerals and enzymes, and a startling fresh taste without the use of preservatives.
+      p(md)
+        | [Gundalow Juice](/) is best enjoyed with a meal, as a pre-workout boost or post-workout replenishment, and also serves as an excellent cocktail mixer.
+      #products
+        figure
+          img(src='img/mainstay-green-flag.svg')
+          div
+            h2 Mainstay Green
+            p apple, cucumber, celery, spinach, lemon, ginger
+        figure
+          img(src='img/ss-veggie-flag.svg')
+          div
+            h2 S.S. Veggie
+            p  apple, cucumber, celery, kale, romaine, spinach, lemon
+        figure
+          img(src='img/harbor-voyage-flag.svg')
+          div
+            h2 Harbor Voyage
+            p  pineapple, honeydew melon, organic blackberry, lemon, ginger
+        figure
+          img(src='img/sailors-delight-flag.svg')
+          div
+            h2 Sailors Delight
+            p tangerine, apple, organic raspberry, lemon, ginger
+        figure
+          img(src='img/dockside-sunrise-flag.svg')
+          div
+            h2 Harbor Voyage
+            p pineapple, cucumber, lime, ginger, jalapeno
+        figure
+          img(src='img/starboard-strawberry-flag.svg')
+          div
+            h2 Starboard Strawberry
+            p pineapple, organic strawberry, basil
+        figure
+          img(src='img/watermelon-waves-flag.svg')
+          div
+            h2 Watermelon Waves
+            p watermelon, lime, mint
