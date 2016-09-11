@@ -36,7 +36,7 @@ extends(src='_layouts/default.sgr')
         figure
           img(src='img/dockside-sunrise-flag.svg')
           div
-            h2 Harbor Voyage
+            h2 Dockside Sunrise
             p pineapple, cucumber, lime, ginger, jalapeno
         figure
           img(src='img/starboard-strawberry-flag.svg')
