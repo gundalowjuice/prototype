@@ -3,6 +3,7 @@ const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const jsStandards = require('babel-preset-latest')
 const pageId = require('spike-page-id')
+const locals = {}
 
 module.exports = {
   devtool: 'source-map',
@@ -19,7 +20,7 @@ module.exports = {
   reshape: (ctx) => {
     return htmlStandards({
       webpack: ctx,
-      locals: { pageId: pageId(ctx) }
+      locals: Object.assign({ pageId: pageId(ctx) }, locals)
     })
   },
   plugins: [new Records({
