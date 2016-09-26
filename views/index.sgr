@@ -9,3 +9,13 @@ extends(src='_layouts/default.sgr')
     h2 Hello World
     ul
       li:a(href='ingredients') Ingredients
+
+    h2 Products from Moltin
+    ul
+    each(loop='product of products.result')
+      li {{ product.title }} 
+  
+  
+    
+    
+    
