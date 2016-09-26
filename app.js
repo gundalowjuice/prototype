@@ -1,3 +1,4 @@
+const Records = require('spike-records')
 const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const jsStandards = require('babel-preset-latest')
@@ -21,6 +22,10 @@ module.exports = {
       locals: { pageId: pageId(ctx) }
     })
   },
+  plugins: [new Records({
+    addDataTo: locals,
+    products: { file: 'data/products.json' }
+  })],
   postcss: (ctx) => {
     return cssStandards({ webpack: ctx })
   },
