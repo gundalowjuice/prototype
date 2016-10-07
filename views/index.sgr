@@ -28,6 +28,22 @@ extends(src='_layouts/default.sgr')
       |
         svg(viewBox='0 0 20 20' class='icon icon-twitter')
           use(xlink:href='#icon-twitter')
+    a(href='#')
+      |
+        svg(viewBox='0 0 20 20' class='icon icon-basket')
+          use(xlink:href='#icon-basket')
+    a(href='#')
+      |
+        svg(viewBox='0 0 20 20' class='icon icon-cart')
+          use(xlink:href='#icon-cart')
+    a(href='#')
+      |
+        svg(viewBox='0 0 20 20' class='icon magnifying-glass')
+          use(xlink:href='#icon-magnifying-glass')
+    a(href='#')
+      |
+        svg(viewBox='0 0 20 20' class='icon menu')
+          use(xlink:href='#icon-menu')
   
   
     
