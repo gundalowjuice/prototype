@@ -12,8 +12,22 @@ extends(src='_layouts/default.sgr')
 
     h2 Products from Moltin
     ul
-    each(loop='product of products.result')
-      li {{ product.title }} 
+      each(loop='product of products.result')
+        li {{ product.title }}
+      
+    h2 Social Icons
+    a(href='http://www.facebook.com/GundalowJuice')
+      |
+        svg(viewBox='0 0 20 20' class='icon icon-facebook')
+          use(xlink:href='#icon-facebook')
+    a(href='http://instagram.com/GundalowJuice')
+      |
+        svg(viewBox='0 0 18 18' class='icon icon-instagram')
+          use(xlink:href='#icon-instagram')
+    a(href='https://twitter.com/GundalowJuice')
+      |
+        svg(viewBox='0 0 20 20' class='icon icon-twitter')
+          use(xlink:href='#icon-twitter')
   
   
     
