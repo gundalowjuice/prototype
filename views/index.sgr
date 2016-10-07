@@ -6,7 +6,7 @@ extends(src='_layouts/default.sgr')
       content='Index prototyping.'
     )
   block(name='main')
-    include(src='./_includes/header.sgr')
+
 
     h2 Hello World
     ul
@@ -46,3 +46,5 @@ extends(src='_layouts/default.sgr')
       |
         svg(viewBox='0 0 20 20' class='icon menu')
           use(xlink:href='#icon-menu')
+
+  
