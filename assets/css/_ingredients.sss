@@ -1,0 +1,24 @@
+#ingredients
+  & #container
+    padding: 1em
+
+    @media (min-width: 48em)
+      padding: 1em // if calc() is not supported
+      padding: 1em calc(50% - 384px)
+
+  & #products
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 2em
+
+    & figure
+      align-items: center
+      display: flex
+      justify-content: space-between
+      margin-bottom: 2em
+      max-width: 20em
+      
+    & img
+      margin-right: 2em
+      width: 7em
