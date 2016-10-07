@@ -16,6 +16,8 @@ html
 
     block(name='main')
 
+    block(name='sprite')
+      include(src='./_includes/icon-sprite.sgr')
     block(name='javascript')
       script(src='js/main.js' defer)
 
