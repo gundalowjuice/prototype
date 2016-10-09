@@ -6,6 +6,8 @@ extends(src='_layouts/default.sgr')
       content='Index prototyping.'
     )
   block(name='main')
+
+
     h2 Hello World
     ul
       li:a(href='ingredients') Ingredients
@@ -14,7 +16,7 @@ extends(src='_layouts/default.sgr')
     ul
       each(loop='product of products.result')
         li {{ product.title }}
-      
+
     h2 Social Icons
     a(href='http://www.facebook.com/GundalowJuice')
       |
@@ -44,8 +46,5 @@ extends(src='_layouts/default.sgr')
       |
         svg(viewBox='0 0 20 20' class='icon menu')
           use(xlink:href='#icon-menu')
+
   
-  
-    
-    
-    
