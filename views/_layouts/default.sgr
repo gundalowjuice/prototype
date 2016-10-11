@@ -18,6 +18,9 @@ html
 
     block(name='main')
 
+    block(name='footer')
+      include(src='./_includes/footer.sgr')
+
     block(name='sprite')
       include(src='./_includes/icon-sprite.sgr')
     block(name='javascript')
