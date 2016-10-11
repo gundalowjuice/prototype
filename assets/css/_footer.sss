@@ -4,6 +4,10 @@ footer
   flex-direction: column
   text-align: center
 
+  @media (min-width: 48em)
+    flex-direction: row
+    justify-content: space-between
+
   & div
     padding: .5em 0 1em 0
 
@@ -17,6 +21,11 @@ footer
     order: 2
     color: #fff
     background-color: #999999
+
+    @media (min-width: 48em)
+      color: #999999
+      background-color: inherit
+      order: 1
 
     & li
       padding: .5em 0
