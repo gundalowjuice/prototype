@@ -2,7 +2,7 @@ footer
   div#contact
     h3 CONTACT US!
     ul
-      li mail@gundalowjuice.com
+      li: a(href="mailto: mail@gundalowjuice.com") mail@gundalowjuice.com
       li (443) 873-3460
 
   div#social
