@@ -3,14 +3,17 @@ footer
   display: flex
   flex-direction: column
   text-align: center
-  margin: 1em 1em 0 1em
 
   @media (min-width: 46em)
     flex-direction: row
     justify-content: space-between
+    margin: 1em 1em 0 1em
 
   & a
     text-decoration: none
+
+  /*& div
+    padding: .5em 0*/
 
   & h3
     margin: .5em 0
@@ -30,8 +33,12 @@ footer
       order: 1
       text-align: left
 
-    & li
-      padding: 0 0 .5em 0
+    & p
+      padding: 0
+
+    & span
+      display: block
+      margin: 0 0 .5em 0
 
   & #social
     order: 3
@@ -41,7 +48,10 @@ footer
 
     & ul
       display: flex
-      justify-content: space-around
+      justify-content: center
+
+      & li:nth-child(-n+2)
+        margin-right: .5em
 
 
   & #email-form
@@ -73,3 +83,4 @@ footer
         padding: .25em 0
         font-family: var(--headingFontFamily) //Source Sans Pro regular?
         text-transform: uppercase
+        margin-bottom: .5em
