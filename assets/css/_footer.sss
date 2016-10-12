@@ -22,16 +22,20 @@ footer
     color: #fff
     background-color: #999999
 
-    @media (min-width: 48em)
+    @media (min-width: 42em)
       color: #999999
       background-color: inherit
       order: 1
+      margin-left: 1em
 
     & li
       padding: .5em 0
 
   & #social
     order: 3
+
+    @media (min-width: 42em)
+      order: 1
 
     & ul
       display: flex
@@ -43,6 +47,9 @@ footer
 
   & #email-form
     order: 1
+
+    @media (min-width: 42em)
+      margin-right: 1em
 
     & form
       display: flex
