@@ -15,8 +15,8 @@ html
   body(id='{{ pageId }}')
     block(name='header')
       include(src='./_includes/header.sgr')
-
-    block(name='main')
+    main
+      block(name='main')
 
     block(name='footer')
       include(src='./_includes/footer.sgr')

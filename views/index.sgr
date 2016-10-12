@@ -7,7 +7,6 @@ extends(src='_layouts/default.sgr')
     )
   block(name='main')
 
-
     h2 Hello World
     ul
       li:a(href='ingredients') Ingredients
