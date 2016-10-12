@@ -7,38 +7,4 @@ extends(src='_layouts/default.sgr')
     )
   block(name='main')
 
-    h2 Hello World
-    ul
-      li:a(href='ingredients') Ingredients
-
-    h2 Products from Moltin
-    ul
-      each(loop='product of products.result')
-        li {{ product.title }}
-
-    h2 Social Icons
-    a(href='http://www.facebook.com/GundalowJuice')
-      |
-        svg(viewBox='0 0 20 20' class='icon icon-facebook')
-          use(xlink:href='#icon-facebook')
-    a(href='http://instagram.com/GundalowJuice')
-      |
-        svg(viewBox='0 0 18 18' class='icon icon-instagram')
-          use(xlink:href='#icon-instagram')
-    a(href='https://twitter.com/GundalowJuice')
-      |
-        svg(viewBox='0 0 20 20' class='icon icon-twitter')
-          use(xlink:href='#icon-twitter')
-    h2 Josh's Icons
-    a(href='#')
-      |
-        svg(viewBox='0 0 27.2 21.1' class='icon icon-cart')
-          use(xlink:href='#icon-cart')
-    a(href='#')
-      |
-        svg(viewBox='0 0 16 16.2' class='icon magnifying-glass')
-          use(xlink:href='#icon-magnifying-glass')
-    a(href='#')
-      |
-        svg(viewBox='0 0 27.2 16.2' class='icon menu')
-          use(xlink:href='#icon-menu')
+    
