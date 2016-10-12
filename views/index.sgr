@@ -43,5 +43,3 @@ extends(src='_layouts/default.sgr')
       |
         svg(viewBox='0 0 27.2 16.2' class='icon menu')
           use(xlink:href='#icon-menu')
-
-  

@@ -1,0 +1,29 @@
+footer
+  div#contact
+    h3 contact us!
+    p
+      span: a(href="mailto:mail@gundalowjuice.com") mail@gundalowjuice.com
+      span: a(href="tel:4438733460") (443) 873-3460
+
+  div#social
+    h3 connect with us!
+    ul
+      li: a(href='http://www.facebook.com/GundalowJuice')
+        |
+          svg(viewBox='0 0 20 20' class='icon icon-facebook')
+            use(xlink:href='#icon-facebook')
+      li: a(href='http://instagram.com/GundalowJuice')
+        |
+          svg(viewBox='0 0 18 18' class='icon icon-instagram')
+            use(xlink:href='#icon-instagram')
+      li: a(href='https://twitter.com/GundalowJuice')
+        |
+          svg(viewBox='0 0 20 20' class='icon icon-twitter')
+            use(xlink:href='#icon-twitter')
+
+  div#email-form
+    h3 sign up for our newsletter
+    form(action='#' method='post')
+      label(for='email')
+      input(type='email')
+      button(type='submit') submit

@@ -1,0 +1,86 @@
+footer
+  color: #999999
+  display: flex
+  flex-direction: column
+  text-align: center
+
+  @media (min-width: 46em)
+    flex-direction: row
+    justify-content: space-between
+    margin: 1em 1em 0 1em
+
+  & a
+    text-decoration: none
+
+  /*& div
+    padding: .5em 0*/
+
+  & h3
+    margin: .5em 0
+    text-transform: uppercase
+
+  & ul
+    list-style: none
+
+  & #contact
+    order: 2
+    color: #fff
+    background-color: #999999
+
+    @media (min-width: 46em)
+      color: #999999
+      background-color: inherit
+      order: 1
+      text-align: left
+
+    & p
+      padding: 0
+
+    & span
+      display: block
+      margin: 0 0 .5em 0
+
+  & #social
+    order: 3
+
+    @media (min-width: 46em)
+      order: 1
+
+    & ul
+      display: flex
+      justify-content: center
+
+      & li:nth-child(-n+2)
+        margin-right: .5em
+
+
+  & #email-form
+    order: 1
+
+    & form
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      @media (min-width: 46em)
+        align-items: flex-end
+
+      & input
+        border: 1px solid #999999
+        box-shadow: inset .5px .5px .5px #999999
+        width: 18em
+        margin: 0 0 1em 0
+
+      /*  &:focus
+          how to style this
+      */
+
+      & button
+        background-color: #999999
+        color: #fff
+        border-style: none
+        width: 5em
+        padding: .25em 0
+        font-family: var(--headingFontFamily) //Source Sans Pro regular?
+        text-transform: uppercase
+        margin-bottom: .5em
