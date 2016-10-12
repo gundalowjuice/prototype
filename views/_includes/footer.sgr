@@ -2,8 +2,8 @@ footer
   div#contact
     h3 CONTACT US!
     ul
-      li: a(href="mailto: mail@gundalowjuice.com") mail@gundalowjuice.com
-      li (443) 873-3460
+      li: a(href="mailto:mail@gundalowjuice.com") mail@gundalowjuice.com
+      li: a(href="tel:+443 873 3460") (443) 873-3460
 
   div#social
     h3 CONNECT WITH US!
