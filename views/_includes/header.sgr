@@ -6,5 +6,5 @@ header
     li: a(href='/')
       img(src='./img/gj-logo-white.svg')
     li: a(href='#')
-      svg(viewBox='0 0 20 20' class='icon icon-basket')
-        use(xlink:href='#icon-basket')
+      svg(viewBox='0 0 27.2 21.1' class='icon icon-cart')
+        use(xlink:href='#icon-cart')
