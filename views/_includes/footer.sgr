@@ -1,12 +1,12 @@
 footer
   div#contact
-    h3 CONTACT US!
+    h3 contact us!
     ul
       li: a(href="mailto:mail@gundalowjuice.com") mail@gundalowjuice.com
       li: a(href="tel:+443 873 3460") (443) 873-3460
 
   div#social
-    h3 CONNECT WITH US!
+    h3 connect with us!
     ul
       li: a(href='http://www.facebook.com/GundalowJuice')
         |
@@ -22,8 +22,8 @@ footer
             use(xlink:href='#icon-twitter')
 
   div#email-form
-    h3 SIGN UP FOR OUR NEWSLETTER
+    h3 sign up for our newsletter
     form(action='#' method='post')
       label(for='email')
       input(type='email')
-      button(type='submit') SUBMIT
+      button(type='submit') submit
