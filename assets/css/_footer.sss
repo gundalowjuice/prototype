@@ -3,6 +3,7 @@ footer
   display: flex
   flex-direction: column
   text-align: center
+  margin: 1em 1em 0 1em
 
   @media (min-width: 46em)
     flex-direction: row
@@ -11,12 +12,9 @@ footer
   & a
     text-decoration: none
 
-  & div
-    padding: .5em 0 1em 0
-
-    & h3
-      margin: .5em 0
-      text-transform: uppercase
+  & h3
+    margin: .5em 0
+    text-transform: uppercase
 
   & ul
     list-style: none
@@ -30,7 +28,6 @@ footer
       color: #999999
       background-color: inherit
       order: 1
-      margin-left: 1em
       text-align: left
 
     & li
@@ -49,9 +46,6 @@ footer
 
   & #email-form
     order: 1
-
-    @media (min-width: 46em)
-      margin-right: 1em
 
     & form
       display: flex
