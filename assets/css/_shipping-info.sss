@@ -1,0 +1,31 @@
+#shipping-info
+  text-align: center
+  color: #fff
+  background-color: #ff0000
+
+  & p
+    text-align: center
+    padding: 1em
+    height: auto
+
+    & span
+      display: block
+
+      &:nth-of-type(1)
+
+        @media (min-width: 44em)
+          display: none
+
+      &:nth-of-type(2)
+        max-height: 0
+        opacity: 0
+        transition: all .5s ease-out
+
+        @media (min-width: 44em)
+          display: block
+          opacity: 1
+          max-height: max-content
+
+      &.visible
+        max-height: 5em
+        opacity: 1
