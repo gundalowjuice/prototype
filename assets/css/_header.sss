@@ -13,4 +13,22 @@ header
       text-decoration: none
     & img
       width: 12em
-      
+
+    & #search
+      display: none
+      @media (min-width: 44em)
+        display: flex
+
+
+    & #menu
+      @media (min-width: 44em)
+        order: 3
+
+    & #logo
+      @media (min-width: 44em)
+        order: 2
+        flex-grow: 2
+
+    & #cart
+      @media (min-width: 44em)
+        order: 4
