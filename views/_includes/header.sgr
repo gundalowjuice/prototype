@@ -3,9 +3,17 @@ header
     li#search: a(href='#')
       svg(viewBox='0 0 16 16.2' class='icon icon-magnifying-glass')
         use(xlink:href='#icon-magnifying-glass')
-    li#menu: a(href='#')
+    li#menu
       svg(viewBox='0 0 20 20' class='icon menu')
         use(xlink:href='#icon-menu')
+      nav
+        ul
+          li: a(href="#") Shop
+          li: a(href="#") Ingredients
+          li: a(href="#") Press
+          li: a(href="#") About
+          li: a(href="#") Contact
+          li: a(href="#") Store Locator
     li#logo: a(href='/')
       img(src='./img/gj-logo-white.svg')
     li#cart: a(href='#')
