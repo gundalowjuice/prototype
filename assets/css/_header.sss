@@ -9,6 +9,8 @@ header
       list-style: none
       display: flex
       align-items: center
+      @media (min-width: 44em)
+        justify-content: center
     & a
       text-decoration: none
     & img
@@ -23,6 +25,25 @@ header
     & #menu
       @media (min-width: 44em)
         order: 3
+        margin-right: 1em
+
+      & nav ul
+        display: flex;
+        flex-direction: column;
+        width: 100%
+        align-items: center
+        background-color: #999999;
+        padding: .5em 0
+        position: absolute;
+        top: 82px
+        left: 0
+        @media (min-width: 44em)
+          width: inherit
+          padding: .2em .5em
+          top: 82px;
+          right: 0px;
+          align-items: flex-end;
+
 
     & #logo
       @media (min-width: 44em)
