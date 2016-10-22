@@ -1,4 +1,3 @@
 div#shipping-info
-  p
-    span Shipping Info
-    span Order by 8 AM EST Monday-Thursday for next day delivery (US only, shipping included)
+  p Shipping Info
+  p Order by 8 AM EST Monday-Thursday for next day delivery (US only, shipping included)
