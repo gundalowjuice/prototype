@@ -4,28 +4,16 @@
   background-color: #ff0000
 
   & p
-    text-align: center
-    padding: 1em
-    height: auto
 
-    & span
-      display: block
+    &:nth-of-type(1)
+      padding: .5em
 
-      &:nth-of-type(1)
+      @media (min-width: 44em)
+        display: none
 
-        @media (min-width: 44em)
-          display: none
+    &:nth-of-type(2)
+      display: none
 
-      &:nth-of-type(2)
-        max-height: 0
-        opacity: 0
-        transition: all .5s ease-out
-
-        @media (min-width: 44em)
-          display: block
-          opacity: 1
-          max-height: max-content
-
-      &.visible
-        max-height: 5em
-        opacity: 1
+      @media (min-width: 44em)
+        display: block
+        padding: .5em
