@@ -1,18 +1,12 @@
-// console.log('you can use ES6 here : )')
-//
-// var clickTarget = document.getElementById('shipping-info');
-// var shippingInfo = document.getElementsByTagName('span')[1];
-//
-// clickTarget.addEventListener('click', visToggle, false);
-//
-// function visToggle(){
-//   shippingInfo.classList.toggle('visible');
-// }
-//
-//
-// console.log(clickTarget);
-// console.log(shipping);
 
 $(document).ready(function(){
-  console.log('jquery is working!');
+  checkDisplay();
 });
+
+function checkDisplay(){
+  if($('p:nth-of-type(2)').css('display') === 'none'){
+    $('#shipping-info').on('click', function () {
+        $('p:nth-of-type(2)').slideToggle('slow');
+    })
+  };
+};
