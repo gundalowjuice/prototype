@@ -17,7 +17,7 @@ $(document).ready(function(){
   checkDisplay();
 
   $('#hamburger').click(function(){
-    $('#menu').slideToggle('slow');
+    $('#menu').fadeToggle('fast');
   })
 });
 
