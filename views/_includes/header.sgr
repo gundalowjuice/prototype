@@ -6,7 +6,7 @@ header
     li#hamburger
       svg(viewBox='0 0 20 20' class='icon menu')
         use(xlink:href='#icon-menu')
-      nav#menu.hide
+      nav#menu
         ul
           li: a(href="#") Shop
           li: a(href="#") Ingredients
