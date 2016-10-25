@@ -1,10 +1,21 @@
 header
   ul
-    li: a(href='#')
+    li#search: a(href='#')
+      svg(viewBox='0 0 16 16.2' class='icon icon-magnifying-glass')
+        use(xlink:href='#icon-magnifying-glass')
+    li#hamburger
       svg(viewBox='0 0 20 20' class='icon menu')
         use(xlink:href='#icon-menu')
-    li: a(href='/')
+      nav#menu
+        ul
+          li: a(href="#") Shop
+          li: a(href="#") Ingredients
+          li: a(href="#") Press
+          li: a(href="#") About
+          li: a(href="#") Contact
+          li: a(href="#") Store Locator
+    li#logo: a(href='/')
       img(src='./img/gj-logo-white.svg')
-    li: a(href='#')
+    li#cart: a(href='#')
       svg(viewBox='0 0 27.2 21.1' class='icon icon-cart')
         use(xlink:href='#icon-cart')
