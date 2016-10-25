@@ -6,7 +6,7 @@ header
     li#hamburger
       svg(viewBox='0 0 20 20' class='icon menu')
         use(xlink:href='#icon-menu')
-      nav#menu.hide
+      nav#menu
         ul
           li: a(href="#") Shop
           li: a(href="#") Ingredients
@@ -16,6 +16,7 @@ header
           li: a(href="#") Store Locator
     li#logo: a(href='/')
       img(src='./img/gj-logo-white.svg')
-    li#cart: a(href='#')
+    li#cart
       svg(viewBox='0 0 27.2 21.1' class='icon icon-cart')
         use(xlink:href='#icon-cart')
+    

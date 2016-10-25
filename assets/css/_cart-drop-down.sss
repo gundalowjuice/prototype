@@ -1,0 +1,63 @@
+#cart-dropdown
+  display: none
+  color: #fff
+  background-color: #999999
+  width: 100%
+
+  & div
+    width: 90%
+    margin: auto
+
+    @media (min-width: 44em)
+      width: 50%
+
+    & table
+      border-spacing: 0
+      width: 100%
+
+      & td
+        padding-bottom: 1em
+
+      & #head
+        font-weight: bold
+        font-size: 115%
+
+        & td
+          padding-top: 1em
+
+      & #footer > td
+        border-top: 1px solid #fff
+
+      & .center
+        text-align: center
+
+      & .right
+        text-align: right
+
+      & .total
+        padding-top: 1em
+
+    & a
+      background-color: #fff
+      color: #999999
+      display: block
+      float: right
+      padding: .5em
+      margin: 1em 0
+      border-radius: 3px
+      text-decoration: none
+
+      @media (min-width: 44em)
+        margin: 1.5em 0
+
+    &:after
+      content: " "
+      position: absolute
+      bottom: 100%
+      left: 93%
+      border-left: 10px solid transparent
+      border-right: 10px solid transparent
+      border-bottom: 10px solid #999999
+
+      @media (min-width: 44em)
+        display: none
