@@ -21,8 +21,16 @@ header
       @media (min-width: 44em)
         display: flex
 
+      & form
+        position: absolute
+        left: 5%
+
+        & input[type="text"]
+          display: none
+          font-size: 1em
 
     & #hamburger
+      cursor: pointer
       @media (min-width: 44em)
         order: 3
         margin-right: 1.5em
@@ -66,6 +74,29 @@ header
 
           & li
             padding: .25em .5em
+
+            &:nth-of-type(1)
+              width: 100%
+
+            & form
+              display: flex
+              margin: auto
+              width: 100%
+              @media (min-width: 44em)
+                display: none
+
+              & input[type="text"]
+                width: 75%
+                margin: auto
+                text-align: center
+                font-size: 1em
+                font-family: var(--bodyFontFamily)
+
+
+
+            & a
+              &:hover
+                color: black
 
     & #logo
 

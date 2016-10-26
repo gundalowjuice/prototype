@@ -16,8 +16,13 @@ console.log('you can use ES6 here : )')
 $(document).ready(function(){
   checkDisplay();
 
-  $('#hamburger').click(function(){
+//target #hamburger svg instead of just hamburger
+  $('#hamburger svg').click(function(){
     $('#menu').fadeToggle('fast');
+  })
+
+  $('#search svg').click(function(){
+    $('#search input[type="text"], #search button').toggle('slow')
   })
 });
 
