@@ -16,6 +16,7 @@ header
           li: a(href="#") Store Locator
     li#logo: a(href='/')
       img(src='./img/gj-logo-white.svg')
-    li#cart: a(href='#')
+    li#cart
       svg(viewBox='0 0 27.2 21.1' class='icon icon-cart')
         use(xlink:href='#icon-cart')
+    

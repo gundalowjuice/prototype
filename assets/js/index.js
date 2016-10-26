@@ -21,9 +21,13 @@ $(document).ready(function(){
   })
 });
 
+  $('#cart').click(function(){
+    $('#cart-dropdown').slideToggle('slow');
+  });
+
 function checkDisplay(){
   if($('p:nth-of-type(2)').css('display') === 'none'){
-    $('#shipping-info').on('click', function () {
+    $('#shipping-info').on('click', function(){
         $('p:nth-of-type(2)').slideToggle('slow');
     })
   };
