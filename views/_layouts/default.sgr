@@ -16,10 +16,15 @@ html
   body(id='{{ pageId }}')
     block(name='header')
       include(src='./_includes/header.sgr')
+      include(src='./_includes/cart-drop-down.sgr')
+
     block(name='shipping-info')
       include(src='./_includes/shipping-info.sgr')
     main
       block(name='main')
+
+    block(name='help')
+      include(src='./_includes/help.sgr')
 
     block(name='footer')
       include(src='./_includes/footer.sgr')

@@ -1,0 +1,29 @@
+section#cart-dropdown
+  div
+    table
+      tr#head
+        td Item
+        td.center Size
+        td.center Qty
+        td.right   Price
+      tr
+        td Juice name
+        td.center 7 Pack
+        td.center 1
+        td.right $0.00
+      tr
+        td Juice name
+        td.center 7 Pack
+        td.center 1
+        td.right $0.00
+      tr
+        td Juice name
+        td.center 7 Pack
+        td.center 1
+        td.right $0.00
+      tr#footer
+        td
+        td
+        td
+        td.total.right $0.00
+    a(href="#") Checkout
