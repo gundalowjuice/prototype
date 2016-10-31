@@ -24,6 +24,10 @@ $(document).ready(function(){
   $('#search svg').click(function(){
     $('#search input[type="text"], #search button').toggle('slow')
   })
+
+  $('#search svg').click(function(){
+    $('#search input[type="text"], #search button').toggle('slow')
+  })
 });
 
   $('#cart').click(function(){

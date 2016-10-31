@@ -2,6 +2,10 @@ header
   background-color: #000
   color: #fff
   padding: 1em
+
+  & svg.icon
+    height: 1.5em
+    width: 1.5em
   & ul
     display: flex
     justify-content: space-between
@@ -28,6 +32,9 @@ header
         & input[type="text"]
           display: none
           font-size: 1em
+          border-radius: 3px
+          font-family: var(--bodyFontFamily)
+          padding: .25em
 
     & #hamburger
       cursor: pointer
@@ -42,6 +49,9 @@ header
         top: 90px
         right: 0
 
+        @media (min-width: 44em)
+          width: auto
+
         &:after
           content: " "
           position: absolute
@@ -52,13 +62,7 @@ header
           border-bottom: 10px solid #999999
 
           @media (min-width: 44em)
-            left: 23%
-
-        @media (min-width: 44em)
-          width: auto
-          top: 90px
-          right: 0
-
+            left: 2.75em
 
         & ul
           display: flex
@@ -91,6 +95,8 @@ header
                 text-align: center
                 font-size: 1em
                 font-family: var(--bodyFontFamily)
+                border-radius: 3px
+                padding: .25em
 
             & a
               &:hover

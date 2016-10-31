@@ -7,7 +7,7 @@ footer
   @media (min-width: 46em)
     flex-direction: row
     justify-content: space-between
-    margin: 1em 1em 0 1em
+    margin: 1em
 
   & a
     text-decoration: none
@@ -34,28 +34,36 @@ footer
       text-align: left
 
     & p
+      margin: .5em 0
       padding: 0
 
-    & span
-      display: block
-      margin: 0 0 .5em 0
+    & #social
+      order: 3
 
-  & #social
-    order: 3
+      @media (min-width: 46em)
+        order: 1
 
-    @media (min-width: 46em)
-      order: 1
+      & ul
+        display: flex
+        justify-content: center
+        padding: .5em 0 0 0
 
-    & ul
-      display: flex
-      justify-content: center
+        @media (min-width: 44em)
+          justify-content: flex-start
 
-      & li:nth-child(-n+2)
-        margin-right: .5em
+        & li:nth-child(-n+2)
+          margin-right: 2em
+
+
 
 
   & #email-form
     order: 1
+    display: flex
+    flex-direction: column
+
+    @media (min-width: 44em)
+      text-align: right
 
     & form
       display: flex
@@ -70,10 +78,13 @@ footer
         box-shadow: inset .5px .5px .5px #999999
         width: 18em
         margin: 0 0 1em 0
+        font-size: 1em
+        border-radius: 3px
+        text-align: center
+        padding: .25em
 
-      /*  &:focus
-          how to style this
-      */
+        @media (min-width: 44em)
+          text-align: right
 
       & button
         background-color: #999999
@@ -82,5 +93,7 @@ footer
         width: 5em
         padding: .25em 0
         font-family: var(--headingFontFamily) //Source Sans Pro regular?
+        font-size: 1em
+        border-radius: 3px
         text-transform: uppercase
         margin-bottom: .5em
