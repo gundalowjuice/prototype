@@ -1,0 +1,156 @@
+#product-image
+  display: flex
+
+  & img
+    margin: auto
+
+#product-content
+  margin: 0 2em
+
+  @media (min-width: 44em)
+    max-width: 32em
+    margin: 0 auto
+
+  & #description
+    margin: 1em 0
+
+    & .header
+      display: flex
+      justify-content: space-between
+
+      & h2
+        color: #ae3863
+        margin: .75em 0
+
+  & #rating
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    margin: 1em 0
+
+    @media (min-width: 44em)
+      flex-direction: row
+
+
+    & #stars
+      margin: auto
+      padding: .5em 0
+      flex-direction: column
+
+      @media (min-width: 44em)
+        order: 2
+
+    & a
+      align-self: center
+      text-decoration: none
+      padding: .5em 0 0 0
+
+      @media (min-width: 44em)
+        order: 2
+        padding: 0
+
+    & #nutrition
+      margin: auto
+      color: #ae3863
+      padding: .5em 0
+
+      @media (min-width: 44em)
+        order: 1
+        margin: auto 0
+
+      & h2
+        margin: 0
+        cursor: pointer
+
+      & .placeholder
+        height: 400px
+        width: 200px
+        background-color: #d3d3d3
+        display: none //change display on hover
+
+
+
+  & #basket-qty
+    color: white
+
+
+    & p
+      display: flex
+      padding: 0
+      border-radius: 5px
+      background-color: #ae3863
+
+      & span
+        padding: 1em
+        cursor: pointer
+
+      & span:nth-of-type(1)
+        background-color: #912C53
+        border-top-left-radius: 5px
+        border-bottom-left-radius: 5px
+
+      & span:nth-of-type(2)
+        flex: 2
+        text-align: center
+        cursor: pointer
+
+
+  & #ingredients
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: 2em 0 0 1em
+
+    & h2
+      align-self: center
+      color: #ae3863
+
+    & #icons
+      display: flex
+      justify-content: center
+
+      & p
+        margin: .5em
+        cursor: pointer
+
+    & #ingredient-content
+      color: #fff
+      background-color: #ae3863
+
+      & .ginger
+        display: none //change display on hover
+
+      & .pineapple
+        display: none //change display on hover
+
+      & .strawberry
+        display: none  //change display on hover
+
+#reviews
+  width: 100%
+  background-color: #999999
+
+  & .review-header
+    display: flex
+    max-width: 32em
+    margin: auto
+    justify-content: space-between
+    padding: 1em 0
+
+    & h2:nth-of-type(1)
+      color: #ae3863
+      margin: .5em 0
+
+  & .review-content
+    display: flex
+    flex-direction: column
+    max-width: 32em
+    margin: auto
+    padding: 2em 0
+    border-bottom: 1px solid #ae3863
+
+    & span
+      color: #ae3863
+
+    & h2
+      margin: .75em .75em .75em 0

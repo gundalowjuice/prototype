@@ -1,0 +1,126 @@
+extends(src='_layouts/default.sgr')
+  block(name='seo')
+    title Products | GJ
+    meta(
+      name='description'
+      content='products prototyping.'
+    )
+  block(name='main')
+    #product-image
+      img(src='./img/starboard-strawberry.jpg')
+    #product-content
+      #description
+        .header
+          h2 Starboard Strawberry
+          h2 $7.00
+        p Previously, known as the Oriole. Sweet for the perfect summer day with the an herb finish from the basil.  This drink leaves you feeling lighter and cooler.
+      #rating
+        #stars
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+        a(href="#reviews") See Reviews(5)
+
+        #nutrition
+          h2 Nutrition
+          .placeholder
+
+      #basket-qty
+        p
+          span -
+          span  Add to basket
+          span +
+
+      #ingredients
+        h2 Ingredients
+
+        #icons
+          p icon
+          p icon
+          p icon
+
+        #ingredient-content
+          .strawberry
+            h3 strawberry
+            p Mixtape iPhone twee, VHS poke vinyl kickstarter tumblr humblebrag distillery sriracha XOXO. Disrupt tote bag lomo synth godard wolf.
+
+          .pineapple
+            h3 pineapple
+            p Blue bottle banh mi man bun, VHS DIY fam asymmetrical. Fap bespoke woke art party williamsburg whatever jean shorts selfies banjo, retro direct trade kinfolk.
+
+          .ginger
+            h3 ginger
+            p Biodiesel banh mi iceland schlitz, keytar roof party hoodie. Sustainable live-edge church-key shoreditch, kinfolk actually banjo cronut ethical offal quinoa.
+
+    #reviews
+      .review-header
+        h2 Reviews
+        h2 Write a Review
+      .review-content
+        span
+          svg(viewBox='0 0 20 20' class='icon star')
+            use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+        h2 Polaroid paleo bitters
+        p Shabby chic yr art party, chambray chicharrones readymade scenester waistcoat trust fund tilde leggings typewriter. Polaroid paleo bitters farm-to-table biodiesel. Banh mi bushwick readymade ethical photo booth marfa knausgaard tbh raclette vinyl listicle, XOXO vaporware. Tacos 3 wolf moon selfies DIY 8-bit locavore, everyday carry photo booth. Butcher intelligentsia tattooed, quinoa neutra freegan franzen yr artisan echo park migas ennui. Gastropub man bun tumblr, paleo yr single-origin coffee post-ironic sartorial. Echo park roof party hammock, 8-bit taxidermy lomo fanny pack leggings.
+
+      .review-content
+        span
+          svg(viewBox='0 0 20 20' class='icon star')
+            use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+        h2 Polaroid paleo bitters
+        p Shabby chic yr art party, chambray chicharrones readymade scenester waistcoat trust fund tilde leggings typewriter. Polaroid paleo bitters farm-to-table biodiesel. Banh mi bushwick readymade ethical photo booth marfa knausgaard tbh raclette vinyl listicle, XOXO vaporware. Tacos 3 wolf moon selfies DIY 8-bit locavore, everyday carry photo booth. Butcher intelligentsia tattooed, quinoa neutra freegan franzen yr artisan echo park migas ennui. Gastropub man bun tumblr, paleo yr single-origin coffee post-ironic sartorial. Echo park roof party hammock, 8-bit taxidermy lomo fanny pack leggings.
+
+      .review-content
+        span
+          svg(viewBox='0 0 20 20' class='icon star')
+            use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+        h2 Polaroid paleo bitters
+        p Shabby chic yr art party, chambray chicharrones readymade scenester waistcoat trust fund tilde leggings typewriter. Polaroid paleo bitters farm-to-table biodiesel. Banh mi bushwick readymade ethical photo booth marfa knausgaard tbh raclette vinyl listicle, XOXO vaporware. Tacos 3 wolf moon selfies DIY 8-bit locavore, everyday carry photo booth. Butcher intelligentsia tattooed, quinoa neutra freegan franzen yr artisan echo park migas ennui. Gastropub man bun tumblr, paleo yr single-origin coffee post-ironic sartorial. Echo park roof party hammock, 8-bit taxidermy lomo fanny pack leggings.
