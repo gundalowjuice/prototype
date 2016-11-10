@@ -1,0 +1,4 @@
+section#help
+  a(href="tel:4438733460")
+    svg#phone(viewBox='0 0 15.99 16' class='icon icon-twitter')
+      use(xlink:href='#icon-phone')

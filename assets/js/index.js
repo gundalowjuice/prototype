@@ -16,14 +16,27 @@ console.log('you can use ES6 here : )')
 $(document).ready(function(){
   checkDisplay();
 
-  $('#hamburger').click(function(){
+//target #hamburger svg instead of just hamburger
+  $('#hamburger svg').click(function(){
     $('#menu').fadeToggle('fast');
+  })
+
+  $('#search svg').click(function(){
+    $('#search input[type="text"], #search button').toggle('slow')
+  })
+
+  $('#search svg').click(function(){
+    $('#search input[type="text"], #search button').toggle('slow')
   })
 });
 
+  $('#cart').click(function(){
+    $('#cart-dropdown').slideToggle('slow');
+  });
+
 function checkDisplay(){
   if($('p:nth-of-type(2)').css('display') === 'none'){
-    $('#shipping-info').on('click', function () {
+    $('#shipping-info').on('click', function(){
         $('p:nth-of-type(2)').slideToggle('slow');
     })
   };

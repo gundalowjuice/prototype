@@ -16,16 +16,23 @@ html
   body(id='{{ pageId }}')
     block(name='header')
       include(src='./_includes/header.sgr')
+      include(src='./_includes/cart-drop-down.sgr')
+
     block(name='shipping-info')
       include(src='./_includes/shipping-info.sgr')
+
     main
       block(name='main')
+
+    block(name='help')
+      include(src='./_includes/help.sgr')
 
     block(name='footer')
       include(src='./_includes/footer.sgr')
 
     block(name='sprite')
       include(src='./_includes/icon-sprite.sgr')
+
     block(name='javascript')
       script(src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous")
       script(src='js/main.js' defer)
