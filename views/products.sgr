@@ -77,10 +77,13 @@ extends(src='_layouts/default.sgr')
       #ingredients
         h2.msg Ingredients
 
-        #icons
-          p icon
-          p icon
-          p icon
+        #icons.msg
+          svg(class='icon strawberry' viewBox="0 0 46.24 55.58")
+            use(xlink:href='#icon-strawberry')
+          svg(class='icon pineapple' viewBox="0 0 32.21 66.38")
+            use(xlink:href='#icon-pineapple')
+          svg(class='icon basil' viewBox="0 0 35.62 59.8")
+            use(xlink:href='#icon-basil')
 
         #ingredient-content
           .strawberry
