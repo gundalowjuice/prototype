@@ -106,6 +106,20 @@ $(document).ready(function(){
 
   })
 
+// ingredient icons
+
+  $('svg.strawberry').click(function(){
+    $('#ingredient-content .strawberry').toggle();
+  })
+
+  $('svg.pineapple').click(function(){
+    $('#ingredient-content .pineapple').toggle();
+  })
+
+  $('svg.basil').click(function(){
+    $('#ingredient-content .basil').toggle();
+  })
+
 // toggle nutrition labels
 
   $('#msg-nutrition h2').click(function(){
