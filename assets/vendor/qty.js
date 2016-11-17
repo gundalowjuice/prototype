@@ -12,15 +12,19 @@
   function incrementQty (e) {
     total+=7
     displayTotal.innerHTML = total
-    console.log('checking total ... total is ' + total + '.')
+    printTotal()
   }
 
   function decrementQty (e) {
     if (total > 0) {
       total-=7
       displayTotal.innerHTML = total
-      console.log('checking total ... total is ' + total + '.')
+      printTotal()
     }
+  }
+
+  function printTotal () {
+    console.log('checking total ... total is ' + total + '.')
   }
 
 })()
