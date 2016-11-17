@@ -7,6 +7,7 @@ const locals = {}
 
 module.exports = {
   devtool: 'source-map',
+  vendor: 'assets/vendor/**',
   matchers: {
     html: '*(**/)*.sgr',
     css: '*(**/)*.sss'
