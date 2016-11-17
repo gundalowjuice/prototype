@@ -81,6 +81,8 @@
       padding: .5em 0
       flex-direction: column
       align-self: center
+      display: flex
+      flex-direction: row
 
       @media (min-width: 44em)
         order: 2
@@ -240,6 +242,9 @@
       width: 8em
       margin: 1em auto
 
+      & svg
+        zoom: 150%
+
       &.msg
         color: #0096AA
 
@@ -259,16 +264,29 @@
 
     & #ingredient-content
       color: #fff
-      background-color: #ae3863
+      text-align: center
 
-      & .ginger
+      &.msg
+        background-color: #0096AA
+
+
+      &.ss
+        background-color: #ae3863
+
+      &.ac
+        background-color: #81bc41
+
+      & .basil
         display: none //change display on hover
+        padding: 1em
 
       & .pineapple
         display: none //change display on hover
+        padding: 1em
 
       & .strawberry
         display: none  //change display on hover
+        padding: 1em
 
 #reviews
   width: 100%

@@ -27,9 +27,6 @@ html
     main
       block(name='main')
 
-    block(name='help')
-      include(src='./_includes/help.sgr')
-
     block(name='footer')
       include(src='./_includes/footer.sgr')
 

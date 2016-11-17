@@ -85,7 +85,7 @@ extends(src='_layouts/default.sgr')
           svg(class='icon basil' viewBox="0 0 35.62 59.8")
             use(xlink:href='#icon-basil')
 
-        #ingredient-content
+        #ingredient-content.msg
           .strawberry
             h3 strawberry
             p Mixtape iPhone twee, VHS poke vinyl kickstarter tumblr humblebrag distillery sriracha XOXO. Disrupt tote bag lomo synth godard wolf.

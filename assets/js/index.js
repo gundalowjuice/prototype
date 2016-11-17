@@ -99,7 +99,56 @@ $(document).ready(function(){
         $('#ingredients h2').addClass('ac').removeClass('ss').removeClass('msg');
       }
 
+  // change color for ingredient section
 
+      if(item === 0){
+        $('#ingredients h2').addClass('msg').removeClass('ss ac');
+      }else if(item === 1){
+        $('#ingredients h2').addClass('ss').removeClass('msg ac');
+      }else if(item === 2){
+        $('#ingredients h2').addClass('ac').removeClass('ss msg');
+      }
+
+      if(item === 0){
+        $('#icons').addClass('msg').removeClass('ss ac');
+      }else if(item === 1){
+        $('#icons').addClass('ss').removeClass('msg ac');
+      }else if(item === 2){
+        $('#icons').addClass('ac').removeClass('ss msg');
+      }
+
+      if(item === 0){
+        $('#ingredient-content').addClass('msg').removeClass('ss ac');
+      }else if(item === 1){
+        $('#ingredient-content').addClass('ss').removeClass('msg ac');
+      }else if(item === 2){
+        $('#ingredient-content').addClass('ac').removeClass('ss msg');
+      }
+
+  // change review color
+  if(item === 0){
+    $('#reviews h2:nth-of-type(1)').addClass('msg').removeClass('ss ac');
+  }else if(item === 1){
+    $('#reviews h2:nth-of-type(1)').addClass('ss').removeClass('msg ac');
+  }else if(item === 2){
+    $('#reviews h2:nth-of-type(1)').addClass('ac').removeClass('ss msg');
+  }
+
+  if(item === 0){
+    $('.review-content').addClass('msg').removeClass('ss ac');
+  }else if(item === 1){
+    $('.review-content').addClass('ss').removeClass('msg ac');
+  }else if(item === 2){
+    $('.review-content').addClass('ac').removeClass('ss msg');
+  }
+
+  if(item === 0){
+    $('.review-content span').addClass('msg').removeClass('ss ac');
+  }else if(item === 1){
+    $('.review-content span').addClass('ss').removeClass('msg ac');
+  }else if(item === 2){
+    $('.review-content span').addClass('ac').removeClass('ss msg');
+  }
 
 
   // end of flickity
@@ -171,15 +220,10 @@ function plus(){
 };
 
 function minus(){
-  if(total >= 7){
     $('#basket-qty span:nth-of-type(1)').click(function(){
       total-=7;
       $('#basket-qty span:nth-of-type(2)').text(total + ' Added to Basket');
-      console.log(total)
-    })
-  }else{
-    console.log('stop');
-  }
+  })
 }
 
 function checkTotal(){
