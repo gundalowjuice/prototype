@@ -1,35 +1,5 @@
 #product-image
-  overflow: hidden
-
-  & #carousel
-    display: flex
-    transform: translateX(20%)
-
-
-    &.is-set
-      transform: none
-      transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1)
-
-    & .carousel-img
-      text-align: center
-      flex: 1 0 20%
-      order: 2
-
-    & .is-ref
-      order: 2
-      background-color: black
-
-    & .one
-      order: 1
-
-    & .three
-      order: 3
-
-#controls
-  display: flex
-
-  & button
-    margin: auto
+  margin: 5em 0
 
 #product-content
   margin: 0 2em
@@ -47,7 +17,16 @@
       & .header
         display: flex
         justify-content: space-between
-        color: #ae3863
+        flex-direction: column
+
+        @media (min-width: 44em)
+          flex-direction: row
+
+        & h2:nth-of-type(1)
+          color: #ae3863
+
+        & h2
+          margin-bottom: .5em
 
 
     &.mainstay-green
@@ -55,14 +34,32 @@
       & .header
         display: flex
         justify-content: space-between
-        color: #0096AA
+        flex-direction: column
+
+        @media (min-width: 44em)
+          flex-direction: row
+
+        & h2:nth-of-type(1)
+          color: #0096AA
+
+        & h2
+          margin-bottom: .5em
 
     &.anchor-case
 
       & .header
         display: flex
         justify-content: space-between
-        color: #81bc41
+        flex-direction: column
+
+        @media (min-width: 44em)
+          flex-direction: row
+
+        & h2:nth-of-type(1)
+          color: #81bc41
+
+        & h2
+          margin-bottom: .5em
 
 
     &.hide
@@ -72,17 +69,18 @@
   & #rating
     display: flex
     flex-direction: column
-    justify-content: space-around
     margin: 1em 0
 
     @media (min-width: 44em)
       flex-direction: row
+      justify-content: space-around
 
 
     & #stars
       margin: auto
       padding: .5em 0
       flex-direction: column
+      align-self: center
 
       @media (min-width: 44em)
         order: 2
@@ -96,10 +94,59 @@
         order: 2
         padding: 0
 
-    & #nutrition
+    & .nutrition#msg-nutrition
       margin: auto
       padding: .5em 0
       cursor: pointer
+      color: #0096AA
+      align-self: center
+
+      @media (min-width: 44em)
+        margin: 0
+
+      & img
+        display: none
+        border: 10px solid #0096AA
+
+        @media (min-width: 44em)
+          position: absolute
+          left: 75px
+          top: 725px
+
+
+
+
+    & .nutrition#ss-nutrition
+      margin: auto
+      padding: .5em 0
+      cursor: pointer
+      color: #ae3863
+      align-self: center
+
+      &.hide
+        display: none
+
+      @media (min-width: 44em)
+        margin: 0
+
+      & img
+        display: none
+        border: 10px solid #ae3863
+
+        @media (min-width: 44em)
+          position: absolute
+          left: 75px
+          top: 725px
+
+
+    & .nutrition#ac-nutrition
+      margin: auto
+      padding: .5em 0
+      cursor: pointer
+      color: #81bc41
+
+      &.hide
+        display: none
 
       &.msg
         color: #0096AA
@@ -216,22 +263,53 @@
     max-width: 32em
     margin: auto
     justify-content: space-between
-    padding: 1em 0
+    padding: 1em 1em
+
+    @media (min-width: 44em)
+      padding: 1em 0
+
+    & h2
+      margin: .5em 0
 
     & h2:nth-of-type(1)
-      color: #ae3863
-      margin: .5em 0
+      &.msg
+        color: #0096AA
+
+      &.ss
+        color: #ae3863
+
+      &.ac
+        color: #81bc41
 
   & .review-content
     display: flex
     flex-direction: column
     max-width: 32em
     margin: auto
-    padding: 2em 0
-    border-bottom: 1px solid #ae3863
+    padding: 2em 1em
+
+    @media (min-width: 44em)
+      padding: 2em 0
+
+
+    &.msg
+      border-bottom: 1px solid #0096AA
+
+    &.ss
+      border-bottom: 1px solid #ae3863
+
+    &.ac
+      border-bottom: 1px solid #81bc41
 
     & span
-      color: #ae3863
+      &.msg
+        color: #0096AA
+
+      &.ss
+        color: #ae3863
+
+      &.ac
+        color: #81bc41
 
     & h2
       margin: .75em .75em .75em 0

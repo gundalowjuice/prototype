@@ -57,14 +57,20 @@ extends(src='_layouts/default.sgr')
               use(xlink:href='#icon-star')
         a(href="#reviews") See Reviews(5)
 
-        #nutrition.msg
+        .nutrition#msg-nutrition
           h2 Nutrition
-          .placeholder
+          img(src='./img/mainstay-green-nutrition.jpg')
+
+        .nutrition#ss-nutrition.hide
+          h2 Nutrition
+          img(src='./img/starboard-strawberry-nutrition.jpg')
+
+        .nutrition#ac-nutrition.hide
+          h2 Nutrition
 
       #basket-qty
         p.msg
           span.msg -
-          span
           span  Add to basket
           span +
 
@@ -91,10 +97,10 @@ extends(src='_layouts/default.sgr')
 
     #reviews
       .review-header
-        h2 Reviews
+        h2.msg Reviews
         h2 Write a Review
       .review-content
-        span
+        span.msg
           svg(viewBox='0 0 20 20' class='icon star')
             use(xlink:href='#icon-star')
           span
@@ -113,7 +119,7 @@ extends(src='_layouts/default.sgr')
         p Shabby chic yr art party, chambray chicharrones readymade scenester waistcoat trust fund tilde leggings typewriter. Polaroid paleo bitters farm-to-table biodiesel. Banh mi bushwick readymade ethical photo booth marfa knausgaard tbh raclette vinyl listicle, XOXO vaporware. Tacos 3 wolf moon selfies DIY 8-bit locavore, everyday carry photo booth. Butcher intelligentsia tattooed, quinoa neutra freegan franzen yr artisan echo park migas ennui. Gastropub man bun tumblr, paleo yr single-origin coffee post-ironic sartorial. Echo park roof party hammock, 8-bit taxidermy lomo fanny pack leggings.
 
       .review-content
-        span
+        span.msg
           svg(viewBox='0 0 20 20' class='icon star')
             use(xlink:href='#icon-star')
           span
@@ -132,7 +138,7 @@ extends(src='_layouts/default.sgr')
         p Shabby chic yr art party, chambray chicharrones readymade scenester waistcoat trust fund tilde leggings typewriter. Polaroid paleo bitters farm-to-table biodiesel. Banh mi bushwick readymade ethical photo booth marfa knausgaard tbh raclette vinyl listicle, XOXO vaporware. Tacos 3 wolf moon selfies DIY 8-bit locavore, everyday carry photo booth. Butcher intelligentsia tattooed, quinoa neutra freegan franzen yr artisan echo park migas ennui. Gastropub man bun tumblr, paleo yr single-origin coffee post-ironic sartorial. Echo park roof party hammock, 8-bit taxidermy lomo fanny pack leggings.
 
       .review-content
-        span
+        span.msg
           svg(viewBox='0 0 20 20' class='icon star')
             use(xlink:href='#icon-star')
           span
