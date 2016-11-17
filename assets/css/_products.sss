@@ -1,0 +1,237 @@
+#product-image
+  overflow: hidden
+
+  & #carousel
+    display: flex
+    transform: translateX(20%)
+
+
+    &.is-set
+      transform: none
+      transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1)
+
+    & .carousel-img
+      text-align: center
+      flex: 1 0 20%
+      order: 2
+
+    & .is-ref
+      order: 2
+      background-color: black
+
+    & .one
+      order: 1
+
+    & .three
+      order: 3
+
+#controls
+  display: flex
+
+  & button
+    margin: auto
+
+#product-content
+  margin: 0 2em
+
+  @media (min-width: 44em)
+    max-width: 32em
+    margin: 0 auto
+
+  & .description
+    margin: 1em 0
+
+    &.starboard-strawberry
+      margin: .75em 0
+
+      & .header
+        display: flex
+        justify-content: space-between
+        color: #ae3863
+
+
+    &.mainstay-green
+
+      & .header
+        display: flex
+        justify-content: space-between
+        color: #0096AA
+
+    &.anchor-case
+
+      & .header
+        display: flex
+        justify-content: space-between
+        color: #81bc41
+
+
+    &.hide
+      display: none
+
+
+  & #rating
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    margin: 1em 0
+
+    @media (min-width: 44em)
+      flex-direction: row
+
+
+    & #stars
+      margin: auto
+      padding: .5em 0
+      flex-direction: column
+
+      @media (min-width: 44em)
+        order: 2
+
+    & a
+      align-self: center
+      text-decoration: none
+      padding: .5em 0 0 0
+
+      @media (min-width: 44em)
+        order: 2
+        padding: 0
+
+    & #nutrition
+      margin: auto
+      padding: .5em 0
+      cursor: pointer
+
+      &.msg
+        color: #0096AA
+
+      &.ss
+        color: #ae3863
+
+      &.ac
+        color: #81bc41
+
+      @media (min-width: 44em)
+        order: 1
+        margin: auto 0
+
+      & h2
+        margin: 0
+        cursor: pointer
+
+      & .placeholder
+        height: 400px
+        width: 200px
+        background-color: #d3d3d3
+        display: none //change display on hover
+
+
+
+  & #basket-qty
+    color: white
+
+
+    & p
+      display: flex
+      padding: 0
+      border-radius: 5px
+
+
+      &.msg
+        background-color: #0096AA
+
+      &.ss
+        background-color: #ae3863
+
+      &.ac
+        background-color: #81bc41
+
+      & span
+        padding: 1em
+        cursor: pointer
+
+      & span:nth-of-type(1)
+        border-top-left-radius: 5px
+        border-bottom-left-radius: 5px
+
+        &.msg
+          background-color: #006376
+
+        &.ss
+          background-color: #912C53
+
+        &.ac
+          background-color: #4E890E
+
+      & span:nth-of-type(2)
+        flex: 2
+        text-align: center
+        cursor: pointer
+
+
+  & #ingredients
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin: 2em 0 1em 0
+
+    & h2
+      align-self: center
+
+      &.msg
+        color: #0096AA
+
+      &.ss
+        color: #ae3863
+
+      &.ac
+        color: #81bc41
+
+    & #icons
+      display: flex
+      justify-content: center
+
+      & p
+        margin: .5em
+        cursor: pointer
+
+    & #ingredient-content
+      color: #fff
+      background-color: #ae3863
+
+      & .ginger
+        display: none //change display on hover
+
+      & .pineapple
+        display: none //change display on hover
+
+      & .strawberry
+        display: none  //change display on hover
+
+#reviews
+  width: 100%
+  background-color: #999999
+
+  & .review-header
+    display: flex
+    max-width: 32em
+    margin: auto
+    justify-content: space-between
+    padding: 1em 0
+
+    & h2:nth-of-type(1)
+      color: #ae3863
+      margin: .5em 0
+
+  & .review-content
+    display: flex
+    flex-direction: column
+    max-width: 32em
+    margin: auto
+    padding: 2em 0
+    border-bottom: 1px solid #ae3863
+
+    & span
+      color: #ae3863
+
+    & h2
+      margin: .75em .75em .75em 0
