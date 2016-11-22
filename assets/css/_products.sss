@@ -1,5 +1,6 @@
 #product-image
   margin: 5em 0
+  display: flex
 
 #product-content
   margin: 0 2em
@@ -8,6 +9,7 @@
     max-width: 32em
     margin: 0 auto
 
+<<<<<<< HEAD
   & .description
     margin: 1em 0
 
@@ -65,15 +67,10 @@
     &.hide
       display: none
 
-
   & #rating
     display: flex
     flex-direction: column
-    margin: 1em 0
-
-    @media (min-width: 44em)
-      flex-direction: row
-      justify-content: flex-end
+    justify-content: flex-end
 
 
     & #stars
@@ -102,8 +99,6 @@
         order: 2
         padding: .25em 0 0 .5em
 
-
-
       & h2
         margin: 0
         cursor: pointer
@@ -125,7 +120,6 @@
       padding: 0
       border-radius: 5px
 
-
       &.msg
         background-color: #0096AA
 
@@ -140,6 +134,7 @@
         cursor: pointer
 
       & span:nth-of-type(1)
+<<<<<<< HEAD
         border-top-left-radius: 5px
         border-bottom-left-radius: 5px
 
@@ -278,13 +273,15 @@
 
       @media (min-width: 44em)
         justify-content: space-around
+        margin: 2em 0 0 1em
 
-      & p
-        margin: .5em
-        cursor: pointer
+    & h2
+      align-self: center
+      color: #ae3863
 
-    & #ingredient-content
-      color: #fff
+    & #icons
+      display: flex
+      justify-content: center
       text-align: center
 
       &.msg
@@ -308,6 +305,12 @@
       & .strawberry
         display: none  //change display on hover
         padding: 1em
+
+      & .ginger
+        display: none //change display on hover
+
+      & .pineapple
+        display: none //change display on hover
 
 #reviews
   width: 100%
@@ -341,6 +344,7 @@
     flex-direction: column
     max-width: 32em
     margin: auto
+<<<<<<< HEAD
     padding: 2em 1em
 
     @media (min-width: 44em)

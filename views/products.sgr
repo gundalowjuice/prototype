@@ -88,6 +88,7 @@ extends(src='_layouts/default.sgr')
             use(xlink:href='#icon-basil')
 
         #ingredient-content.msg
+
           .strawberry
             h3 strawberry
             p Mixtape iPhone twee, VHS poke vinyl kickstarter tumblr humblebrag distillery sriracha XOXO. Disrupt tote bag lomo synth godard wolf.
