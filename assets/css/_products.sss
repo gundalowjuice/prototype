@@ -65,10 +65,15 @@
     &.hide
       display: none
 
+
   & #rating
     display: flex
     flex-direction: column
-    justify-content: flex-end
+    margin: 1em 0
+
+    @media (min-width: 44em)
+      flex-direction: row
+      justify-content: flex-end
 
 
     & #stars
@@ -97,6 +102,8 @@
         order: 2
         padding: .25em 0 0 .5em
 
+
+
       & h2
         margin: 0
         cursor: pointer
@@ -117,6 +124,7 @@
       display: flex
       padding: 0
       border-radius: 5px
+
 
       &.msg
         background-color: #0096AA
@@ -245,11 +253,38 @@
         color: #ae3863
 
       &.ac
-        color: #81bc41 
+        color: #81bc41
 
     & #icons
+      margin: 1em
       display: flex
       justify-content: center
+      width: 8em
+      margin: 1em auto
+      cursor: pointer
+
+      & svg
+        zoom: 150%
+
+      &.msg
+        color: #0096AA
+
+      &.ss
+        color: #ae3863
+
+      &.ac
+        color: #81bc41
+
+
+      @media (min-width: 44em)
+        justify-content: space-around
+
+      & p
+        margin: .5em
+        cursor: pointer
+
+    & #ingredient-content
+      color: #fff
       text-align: center
 
       &.msg
