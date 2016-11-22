@@ -13,7 +13,7 @@ header
           li
             form
               input(type="text" placeholder="Search")
-          li: a(href="#") Shop
+          li: a(href="/products") Shop
           li: a(href="#") Ingredients
           li: a(href="#") Press
           li: a(href="#") About
@@ -24,4 +24,3 @@ header
     li#cart
       svg(viewBox='0 0 27.2 21.1' class='icon icon-cart')
         use(xlink:href='#icon-cart')
-    

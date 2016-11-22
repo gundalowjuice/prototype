@@ -7,51 +7,88 @@ extends(src='_layouts/default.sgr')
     )
   block(name='main')
     #product-image
-      img(src='./img/starboard-strawberry.jpg')
+      .carousel
+        .carousel-cell
+          img(src='./img/mainstay-green.jpg')
+        .carousel-cell
+          img(src='./img/starboard-strawberry.jpg')
+        .carousel-cell
+          img(src='./img/anchor-case.jpg')
+        .carousel-cell
+          img(src='./img/ss-veggie.jpg')
+        .carousel-cell
+          img(src='./img/dockside-sunrise.jpg')
+        .carousel-cell
+          img(src='./img/harbor-voyage.jpg')
     #product-content
-      #description
+      .description.mainstay-green
+        .header
+          h2 Mainstay Green
+          h2 $7.00
+        p The Original. The first recipe we ever made.  Forever our founder's favorite. An approachable green that hits every taste bud: some saltiness from celery, cooling from the cucumber, sweetness from the pineapple, zest from the lemon, and a little spice from the ginger.  You wouldn't even know the spinach is there, except for the fact that you feel amazing after drinking a bottle. herb finish from the basil.  This drink leaves you feeling lighter and cooler.
+
+      .description.starboard-strawberry.hide
         .header
           h2 Starboard Strawberry
           h2 $7.00
         p Previously, known as the Oriole. Sweet for the perfect summer day with the an herb finish from the basil.  This drink leaves you feeling lighter and cooler.
-      #rating
-        #stars
-          span
-            svg(viewBox='0 0 20 20' class='icon star')
-              use(xlink:href='#icon-star')
-          span
-            svg(viewBox='0 0 20 20' class='icon star')
-              use(xlink:href='#icon-star')
-          span
-            svg(viewBox='0 0 20 20' class='icon star')
-              use(xlink:href='#icon-star')
-          span
-            svg(viewBox='0 0 20 20' class='icon star')
-              use(xlink:href='#icon-star')
-          span
-            svg(viewBox='0 0 20 20' class='icon star')
-              use(xlink:href='#icon-star')
-        a(href="#reviews") See Reviews(5)
 
-        #nutrition
-          h2 Nutrition
-          .placeholder
+      .description.anchor-case.hide
+        .header
+          h2 Anchor Case
+          h2 $7.00
+        p Our two greens in one package! Mainstay Green + S.S. Veggie.
+      #rating
+        #stars.msg
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+          span
+            svg(viewBox='0 0 20 20' class='icon star')
+              use(xlink:href='#icon-star')
+
+        a(href="#reviews") See Reviews (5)
 
       #basket-qty
-        p
-          span -
+        p.msg
+          span.msg -
           span  Add to basket
           span +
 
+      #nutrition
+        .nutrition#msg-nutrition
+          h2 Nutrition
+          img(src='./img/mainstay-green-nutrition.jpg')
+
+        .nutrition#ss-nutrition.hide
+          h2 Nutrition
+          img(src='./img/starboard-strawberry-nutrition.jpg')
+
+        .nutrition#ac-nutrition.hide
+          h2 Nutrition
+
       #ingredients
-        h2 Ingredients
+        h2.msg Ingredients
 
-        #icons
-          p icon
-          p icon
-          p icon
+        #icons.msg
+          svg(class='icon strawberry' viewBox="0 0 46.24 55.58")
+            use(xlink:href='#icon-strawberry')
+          svg(class='icon pineapple' viewBox="0 0 32.21 66.38")
+            use(xlink:href='#icon-pineapple')
+          svg(class='icon basil' viewBox="0 0 35.62 59.8")
+            use(xlink:href='#icon-basil')
 
-        #ingredient-content
+        #ingredient-content.msg
+
           .strawberry
             h3 strawberry
             p Mixtape iPhone twee, VHS poke vinyl kickstarter tumblr humblebrag distillery sriracha XOXO. Disrupt tote bag lomo synth godard wolf.
@@ -60,16 +97,16 @@ extends(src='_layouts/default.sgr')
             h3 pineapple
             p Blue bottle banh mi man bun, VHS DIY fam asymmetrical. Fap bespoke woke art party williamsburg whatever jean shorts selfies banjo, retro direct trade kinfolk.
 
-          .ginger
-            h3 ginger
+          .basil
+            h3 basil
             p Biodiesel banh mi iceland schlitz, keytar roof party hoodie. Sustainable live-edge church-key shoreditch, kinfolk actually banjo cronut ethical offal quinoa.
 
     #reviews
       .review-header
-        h2 Reviews
+        h2.msg Reviews
         h2 Write a Review
       .review-content
-        span
+        span.msg
           svg(viewBox='0 0 20 20' class='icon star')
             use(xlink:href='#icon-star')
           span
@@ -88,7 +125,7 @@ extends(src='_layouts/default.sgr')
         p Shabby chic yr art party, chambray chicharrones readymade scenester waistcoat trust fund tilde leggings typewriter. Polaroid paleo bitters farm-to-table biodiesel. Banh mi bushwick readymade ethical photo booth marfa knausgaard tbh raclette vinyl listicle, XOXO vaporware. Tacos 3 wolf moon selfies DIY 8-bit locavore, everyday carry photo booth. Butcher intelligentsia tattooed, quinoa neutra freegan franzen yr artisan echo park migas ennui. Gastropub man bun tumblr, paleo yr single-origin coffee post-ironic sartorial. Echo park roof party hammock, 8-bit taxidermy lomo fanny pack leggings.
 
       .review-content
-        span
+        span.msg
           svg(viewBox='0 0 20 20' class='icon star')
             use(xlink:href='#icon-star')
           span
@@ -107,7 +144,7 @@ extends(src='_layouts/default.sgr')
         p Shabby chic yr art party, chambray chicharrones readymade scenester waistcoat trust fund tilde leggings typewriter. Polaroid paleo bitters farm-to-table biodiesel. Banh mi bushwick readymade ethical photo booth marfa knausgaard tbh raclette vinyl listicle, XOXO vaporware. Tacos 3 wolf moon selfies DIY 8-bit locavore, everyday carry photo booth. Butcher intelligentsia tattooed, quinoa neutra freegan franzen yr artisan echo park migas ennui. Gastropub man bun tumblr, paleo yr single-origin coffee post-ironic sartorial. Echo park roof party hammock, 8-bit taxidermy lomo fanny pack leggings.
 
       .review-content
-        span
+        span.msg
           svg(viewBox='0 0 20 20' class='icon star')
             use(xlink:href='#icon-star')
           span

@@ -1,8 +1,5 @@
 #product-image
-  display: flex
-
-  & img
-    margin: auto
+  margin: 5em 0
 
 #product-content
   margin: 0 2em
@@ -11,31 +8,82 @@
     max-width: 32em
     margin: 0 auto
 
-  & #description
+  & .description
     margin: 1em 0
 
-    & .header
-      display: flex
-      justify-content: space-between
+    &.starboard-strawberry
+      margin: .75em 0
 
-      & h2
-        color: #ae3863
-        margin: .75em 0
+      & .header
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+
+        @media (min-width: 44em)
+          flex-direction: row
+
+        & h2:nth-of-type(1)
+          color: #ae3863
+
+        & h2
+          margin-bottom: .5em
+
+
+    &.mainstay-green
+
+      & .header
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+
+        @media (min-width: 44em)
+          flex-direction: row
+
+        & h2:nth-of-type(1)
+          color: #0096AA
+
+        & h2
+          margin-bottom: .5em
+
+    &.anchor-case
+
+      & .header
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+
+        @media (min-width: 44em)
+          flex-direction: row
+
+        & h2:nth-of-type(1)
+          color: #81bc41
+
+        & h2
+          margin-bottom: .5em
+
+
+    &.hide
+      display: none
 
   & #rating
     display: flex
     flex-direction: column
-    justify-content: space-around
-    margin: 1em 0
-
-    @media (min-width: 44em)
-      flex-direction: row
+    justify-content: flex-end
 
 
     & #stars
-      margin: auto
       padding: .5em 0
       flex-direction: column
+      align-self: center
+      display: flex
+      flex-direction: row
+      color: #0096AA
+
+      &.ss
+        color: #ae3863
+
+      &.ac
+        color: #81bc41
 
       @media (min-width: 44em)
         order: 2
@@ -47,16 +95,7 @@
 
       @media (min-width: 44em)
         order: 2
-        padding: 0
-
-    & #nutrition
-      margin: auto
-      color: #ae3863
-      padding: .5em 0
-
-      @media (min-width: 44em)
-        order: 1
-        margin: auto 0
+        padding: .25em 0 0 .5em
 
       & h2
         margin: 0
@@ -78,53 +117,162 @@
       display: flex
       padding: 0
       border-radius: 5px
-      background-color: #ae3863
+
+      &.msg
+        background-color: #0096AA
+
+      &.ss
+        background-color: #ae3863
+
+      &.ac
+        background-color: #81bc41
 
       & span
         padding: 1em
         cursor: pointer
 
       & span:nth-of-type(1)
-        background-color: #912C53
         border-top-left-radius: 5px
         border-bottom-left-radius: 5px
+
+        &.msg
+          background-color: #006376
+
+        &.ss
+          background-color: #912C53
+
+        &.ac
+          background-color: #4E890E
 
       & span:nth-of-type(2)
         flex: 2
         text-align: center
         cursor: pointer
 
+  & #nutrition
+    text-align: center
+    margin-top: 2em
+
+    & h2:hover
+      zoom: 125%
+
+    & .nutrition#msg-nutrition
+      margin: auto
+      padding: .5em 0
+      cursor: pointer
+      color: #0096AA
+      align-self: center
+
+      @media (min-width: 44em)
+        margin: 0
+
+      & img
+        display: none
+        border: 10px solid #0096AA
+
+        @media (min-width: 44em)
+          position: absolute
+          left: 75px
+          top: 725px
+
+
+
+
+    & .nutrition#ss-nutrition
+      margin: auto
+      padding: .5em 0
+      cursor: pointer
+      color: #ae3863
+      align-self: center
+
+      &.hide
+        display: none
+
+      @media (min-width: 44em)
+        margin: 0
+
+      & img
+        display: none
+        border: 10px solid #ae3863
+
+        @media (min-width: 44em)
+          position: absolute
+          left: 75px
+          top: 725px
+
+
+    & .nutrition#ac-nutrition
+      margin: auto
+      padding: .5em 0
+      cursor: pointer
+      color: #81bc41
+
+      &.hide
+        display: none
+
+      &.msg
+        color: #0096AA
+
+      &.ss
+        color: #ae3863
+
+      &.ac
+        color: #81bc41
+
+      @media (min-width: 44em)
+        order: 1
+        margin: auto 0
 
   & #ingredients
     display: flex
     flex-direction: column
     justify-content: center
-    margin: 2em 0 0 1em
+    margin: 2em 0 1em 0
 
     & h2
       align-self: center
-      color: #ae3863
+      transform: none
+      cursor: pointer
+      transition: transform 5 ease
+
+      &:hover
+        transform: scale(1.25)
+
+      &.msg
+        color: #0096AA
+
+      &.ss
+        color: #ae3863
+
+      &.ac
+        color: #81bc41 
 
     & #icons
       display: flex
       justify-content: center
+      text-align: center
 
-      & p
-        margin: .5em
-        cursor: pointer
+      &.msg
+        background-color: #0096AA
 
-    & #ingredient-content
-      color: #fff
-      background-color: #ae3863
 
-      & .ginger
+      &.ss
+        background-color: #ae3863
+
+      &.ac
+        background-color: #81bc41
+
+      & .basil
         display: none //change display on hover
+        padding: 1em
 
       & .pineapple
         display: none //change display on hover
+        padding: 1em
 
       & .strawberry
         display: none  //change display on hover
+        padding: 1em
 
 #reviews
   width: 100%
@@ -135,22 +283,53 @@
     max-width: 32em
     margin: auto
     justify-content: space-between
-    padding: 1em 0
+    padding: 1em 1em
+
+    @media (min-width: 44em)
+      padding: 1em 0
+
+    & h2
+      margin: .5em 0
 
     & h2:nth-of-type(1)
-      color: #ae3863
-      margin: .5em 0
+      &.msg
+        color: #0096AA
+
+      &.ss
+        color: #ae3863
+
+      &.ac
+        color: #81bc41
 
   & .review-content
     display: flex
     flex-direction: column
     max-width: 32em
     margin: auto
-    padding: 2em 0
-    border-bottom: 1px solid #ae3863
+    padding: 2em 1em
+
+    @media (min-width: 44em)
+      padding: 2em 0
+
+
+    &.msg
+      border-bottom: 1px solid #0096AA
+
+    &.ss
+      border-bottom: 1px solid #ae3863
+
+    &.ac
+      border-bottom: 1px solid #81bc41
 
     & span
-      color: #ae3863
+      &.msg
+        color: #0096AA
+
+      &.ss
+        color: #ae3863
+
+      &.ac
+        color: #81bc41
 
     & h2
       margin: .75em .75em .75em 0
