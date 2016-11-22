@@ -39,7 +39,7 @@ extends(src='_layouts/default.sgr')
           h2 $7.00
         p Our two greens in one package! Mainstay Green + S.S. Veggie.
       #rating
-        #stars
+        #stars.msg
           span
             svg(viewBox='0 0 20 20' class='icon star')
               use(xlink:href='#icon-star')

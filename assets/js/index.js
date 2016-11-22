@@ -73,6 +73,16 @@ $(document).ready(function(){
         $('#ss-nutrition').fadeOut('fast');
       }
 
+    // change color for stars
+
+    if(item === 0){
+      $('#stars').addClass('msg').removeClass('ss ac');
+    }else if(item === 1){
+      $('#stars').addClass('ss').removeClass('msg ac');
+    }else if(item === 2){
+      $('#stars').addClass('ac').removeClass('msg ss');
+    }
+
     //change basket color based on juice display
 
       if(item === 0){
