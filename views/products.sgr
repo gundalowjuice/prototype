@@ -25,7 +25,7 @@ extends(src='_layouts/default.sgr')
         .header
           h2 Mainstay Green
           h2 $7.00
-        p The Original.  The first recipe we ever made.  Forever our founder's favorite. An approachable green that hits every taste bud: some saltiness from celery, cooling from the cucumber, sweetness from the pineapple, zest from the lemon, and a little spice from the ginger.  You wouldn't even know the spinach is there, except for the fact that you feel amazing after drinking a bottle. herb finish from the basil.  This drink leaves you feeling lighter and cooler.
+        p The Original. The first recipe we ever made.  Forever our founder's favorite. An approachable green that hits every taste bud: some saltiness from celery, cooling from the cucumber, sweetness from the pineapple, zest from the lemon, and a little spice from the ginger.  You wouldn't even know the spinach is there, except for the fact that you feel amazing after drinking a bottle. herb finish from the basil.  This drink leaves you feeling lighter and cooler.
 
       .description.starboard-strawberry.hide
         .header
@@ -55,8 +55,16 @@ extends(src='_layouts/default.sgr')
           span
             svg(viewBox='0 0 20 20' class='icon star')
               use(xlink:href='#icon-star')
+
         a(href="#reviews") See Reviews(5)
 
+      #basket-qty
+        p.msg
+          span.msg -
+          span  Add to basket
+          span +
+
+      #nutrition
         .nutrition#msg-nutrition
           h2 Nutrition
           img(src='./img/mainstay-green-nutrition.jpg')
@@ -67,12 +75,6 @@ extends(src='_layouts/default.sgr')
 
         .nutrition#ac-nutrition.hide
           h2 Nutrition
-
-      #basket-qty
-        p.msg
-          span.msg -
-          span  Add to basket
-          span +
 
       #ingredients
         h2.msg Ingredients

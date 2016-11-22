@@ -73,11 +73,10 @@
 
     @media (min-width: 44em)
       flex-direction: row
-      justify-content: space-around
+      justify-content: center
 
 
     & #stars
-      margin: auto
       padding: .5em 0
       flex-direction: column
       align-self: center
@@ -94,7 +93,66 @@
 
       @media (min-width: 44em)
         order: 2
-        padding: 0
+        padding: .25em 0 0 0
+
+
+
+      & h2
+        margin: 0
+        cursor: pointer
+
+      & .placeholder
+        height: 400px
+        width: 200px
+        background-color: #d3d3d3
+        display: none //change display on hover
+
+
+
+  & #basket-qty
+    color: white
+
+
+    & p
+      display: flex
+      padding: 0
+      border-radius: 5px
+
+
+      &.msg
+        background-color: #0096AA
+
+      &.ss
+        background-color: #ae3863
+
+      &.ac
+        background-color: #81bc41
+
+      & span
+        padding: 1em
+        cursor: pointer
+
+      & span:nth-of-type(1)
+        border-top-left-radius: 5px
+        border-bottom-left-radius: 5px
+
+        &.msg
+          background-color: #006376
+
+        &.ss
+          background-color: #912C53
+
+        &.ac
+          background-color: #4E890E
+
+      & span:nth-of-type(2)
+        flex: 2
+        text-align: center
+        cursor: pointer
+
+  & #nutrition
+    text-align: center
+    margin-top: 2em
 
     & .nutrition#msg-nutrition
       margin: auto
@@ -162,60 +220,6 @@
       @media (min-width: 44em)
         order: 1
         margin: auto 0
-
-      & h2
-        margin: 0
-        cursor: pointer
-
-      & .placeholder
-        height: 400px
-        width: 200px
-        background-color: #d3d3d3
-        display: none //change display on hover
-
-
-
-  & #basket-qty
-    color: white
-
-
-    & p
-      display: flex
-      padding: 0
-      border-radius: 5px
-
-
-      &.msg
-        background-color: #0096AA
-
-      &.ss
-        background-color: #ae3863
-
-      &.ac
-        background-color: #81bc41
-
-      & span
-        padding: 1em
-        cursor: pointer
-
-      & span:nth-of-type(1)
-        border-top-left-radius: 5px
-        border-bottom-left-radius: 5px
-
-        &.msg
-          background-color: #006376
-
-        &.ss
-          background-color: #912C53
-
-        &.ac
-          background-color: #4E890E
-
-      & span:nth-of-type(2)
-        flex: 2
-        text-align: center
-        cursor: pointer
-
 
   & #ingredients
     display: flex

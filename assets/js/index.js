@@ -221,8 +221,12 @@ function plus(){
 
 function minus(){
     $('#basket-qty span:nth-of-type(1)').click(function(){
+      if(total > 0){
       total-=7;
       $('#basket-qty span:nth-of-type(2)').text(total + ' Added to Basket');
+    }else{
+        $('#basket-qty span:nth-of-type(2)').text('Added to Basket');
+    }
   })
 }
 
